@@ -89,3 +89,53 @@ export const tes = [
     ingredients: '',
   },
 ];
+
+//// CHOCOLATES
+export const chocolates = [
+  {
+    name: 'Cremuchinos',
+    info: '',
+    prices: [{ unit: '', value: '350' }],
+    ingredients: 'Chocolate - Dulce de Leche - Capuchino - Vainilla',
+  },
+  {
+    name: 'Submarino',
+    info: '',
+    prices: [{ unit: '', value: '280' }],
+    ingredients: '',
+  },
+  {
+    name: 'Chocolatada',
+    info: '',
+    prices: [{ unit: '', value: '200' }],
+    ingredients: '',
+  },
+];
+
+//// MILKSHAKES
+export const milkshakes = [
+  {
+    name: 'Dulce de leche',
+    info: '',
+    prices: [{ unit: '', value: '380' }],
+    ingredients: '',
+  },
+  {
+    name: 'Crema',
+    info: '',
+    prices: [{ unit: '', value: '380' }],
+    ingredients: '',
+  },
+  {
+    name: 'Chocolate',
+    info: '',
+    prices: [{ unit: '', value: '380' }],
+    ingredients: '',
+  },
+  {
+    name: 'Vainilla',
+    info: '',
+    prices: [{ unit: '', value: '380' }],
+    ingredients: '',
+  },
+];

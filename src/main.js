@@ -1,22 +1,15 @@
 import './global.pcss';
 import { createMenuItem } from './assets/js/builder';
+import data from './data/menu';
 
-const triple = {
-  name: 'Triples especiales',
-  info: '',
-  prices: [
-    {
-      unit: '1/2',
-      value: '350',
-    },
-    {
-      unit: 'entero',
-      value: '500',
-    },
-  ],
-  ingredients: 'peceto-pollo',
-};
+// 1. Get every menu on the page
+const menuContainers = document.querySelectorAll('.menu');
 
-document
-  .getElementById('cafe')
-  .insertAdjacentHTML('beforeend', createMenuItem(triple));
+if (menuContainers) {
+  // 2. Use the menu id to access the array that contains the menu items.
+  //    The createMenuItem method returns a menu-item HTML element as a string.
+  menuContainers.forEach((menu) => {
+    const markdown = data[menu.id].map((item) => createMenuItem(item)).join('');
+    menu.insertAdjacentHTML('beforeend', markdown);
+  });
+}

@@ -1,4 +1,4 @@
-// Function that takes an item object and converts it to a menu-item markdown
+// Function that takes an item object and converts it to a menu-item HTML element string
 export const createMenuItem = (item) => {
   const prices = item.prices.map(
     (price) => `
@@ -23,7 +23,7 @@ export const createMenuItem = (item) => {
             ${
               item.ingredients
                 ? `<p class="font-light">${item.ingredients}</p>`
-                : null
+                : ''
             }
           </div>
           `;

@@ -4,7 +4,7 @@ export const createMenuItem = (item) => {
     (price) => `
         <div class="ml-2 flex flex-shrink-0">
             <p class="font-light">${price.unit}</p>
-            <p class="font-bold ml-1">$ ${price.value}</p>
+            <p class="font-bold ml-1 text-lg">$ ${price.value}</p>
         </div>
     `
   );
@@ -13,8 +13,8 @@ export const createMenuItem = (item) => {
           <div class="menu-item mt-2">
             <div class="flex">
               <div class="mr-2 flex flex-shrink-0 align-self-start">
-                <p class="font-bold">${item.name}</p>
-                <p class="font-light ml-1">${item.info}</p>
+                <p class="font-bold text-lg">${item.name}</p>
+                <p class="font-light ml-1 text-lg">${item.info}</p>
               </div>
               <div class="flex flex-grow justify-end">
               ${prices.join('')}
@@ -22,7 +22,7 @@ export const createMenuItem = (item) => {
             </div>
             ${
               item.ingredients
-                ? `<p class="font-light">${item.ingredients}</p>`
+                ? `<p class="font-light text-lg">${item.ingredients}</p>`
                 : ''
             }
           </div>

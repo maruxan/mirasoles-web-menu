@@ -1,3 +1,6 @@
+const brandLight = '#D4CACB';
+const brandDark = '#51363B';
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -8,16 +11,23 @@ module.exports = {
     applyComplexClasses: true,
   },
   purge: {
-    content: ['./src/index.html', './src/**/*.js'],
+    content: ['./src/**/*.html', './src/**/*.js'],
   },
   theme: {
     interFontFeatures: {
       default: ['calt', 'liga', 'kern'],
       numeric: ['tnum', 'salt', 'ss02'],
     },
-    extend: {},
-    container: {
-      center: true,
+    extend: {
+      fontFamily: {
+        brand: ["'Caecilia LT Std 56 Italic'", 'serif'],
+      },
+      colors: {
+        brand: {
+          light: brandLight,
+          dark: brandDark,
+        },
+      },
     },
   },
   variants: {},

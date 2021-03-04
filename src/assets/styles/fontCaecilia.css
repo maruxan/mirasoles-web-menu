@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Caecilia LT Std 56 Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Caecilia LT Std 56 Italic'),
+    url('../fonts/CaeciliaLTStd-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Caecilia LT Std 76 Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Caecilia LT Std 76 Bold Italic'),
+    url('../fonts/CaeciliaLTStd-BoldItalic.woff') format('woff');
+}
